@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://cdn.worldvectorlogo.com/logos/bookingcom-1.svg">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/airtaxis.css">
+    <link rel="stylesheet" href="/assets/css/gateway.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+   
+    
+    <title>Booking.com</title>
+  </head>
+  <body style="overflow-x: hidden">
+
+    <!-- HEADER START -->
+  <header>
+      <div class="header ">
+        <div class="nav-bar container1 ">
+          <div class="col-lg-12 brand">
+            <h2><a href="/index.html">Booking.com</a></h2>
+          </div>
+          <div class="list-bt">
+            <div class="d-grid gap-4 d-md-block">
+              <button class="btn border-0 mx-1" data-bs-toggle="modal"
+                  data-bs-target="#currenciesModal" data-toggle="tooltip" data-placement="bottom" title="Select your currency ">
+                  <span  id="val">AZN</span>
+              </button>
+            </div>
+           <div class="modal fade" id="currenciesModal" tabindex="-1" aria-labelledby="currenciesModalLabel"
+             aria-hidden="true">
+             <div class="modal-dialog modal-xl">
+               <div class="modal-content">
+                 <div class="modal-header">
+                   <h1 class="modal-title fs-5 fw-bold" id="currenciesModalLabel">Select your currency</h1>
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                   <h6 class="fw-bold mb-3">All currencies</h6>
+                   <div id="currencyModal" class="row">
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+              <div class="flaq">
+                <button data-toggle="tooltip" data-placement="bottom" title="Select your language " type="btn" value="button" ><img src="/assets/img/UkFlag.png" alt="chooce your language"></button>
+              </div>
+            <div class="help">
+              <a href="/contact.html">
+                <i data-toggle="tooltip" data-placement="bottom" title="Custom Service help " class="fa-regular fa-circle-question"></i>
+              </a>
+            </div>
+            <div class="property">
+              <a target="_blank" href="/property.html"><p>List your property</p></a>
+            </div>
+            <div class="register">
+              <a href="/login.html"><span> Register</span></a>
+            </div>
+            <div class="signIn">
+              <a href="/login.html"><span> Sign in</span></a>
+            </div>
+          </div>
+          <div class="hide">
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <button data-toggle="tooltip" data-placement="bottom" title="Select your language " type="btn" value="button" ><img src="/assets/img/UkFlag.png" alt="chooce your language"></button>
+              <p>More</p>
+              <a href="/login.html"><i class="fa-regular fa-user"></i>Account</a>
+              <a href="/property.html"><i class="fa-solid fa-house-circle-check"></i>List your property</a>
+              <a href="/contact.html"><i class="fa-regular fa-circle-question"></i>Contact</a>
+              <a href="#"></a>
+            </div>
+            
+            <span  class="burger" style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+          </div>
+        </div>
+      </div>
+
+    <!-- NAV  START-->
+     <nav>
+      <div id="navmenu">
+        <div id="navmenu_icon_container" class="gateway">
+         <div><a href="/index.html"><i class="fa-solid fa-bed"></i> <span id="title"> Stays</span> </a></div>
+         <div id="letsFly"><a href="/flights.html"><i class="fa-solid fa-plane"></i><span id="title"> Flights</span></a></div>
+         <div><a href="/rental.html"><i class="fa-solid fa-car"></i><span id="title">Car Rentals</span></a></div>
+         <div><a href="/attractions.html"><i class="fa-solid fa-mountain-sun"></i><span id="title">Attractions</span></a></div>
+         <div><a href="/airtaxis.html"><i class="fa-solid fa-taxi"></i><span id="title">Airport taxis</span></a></div>
+        </div>
+      </div>
+     </nav>
+     <!-- NAV END -->
+  </header>
+
+    <!-- HEADER END -->
+
+    <!-- Back ground image and heading -->
+    <div id="Gateway_backimage">
+      <div id="backimage">
+        <div>
+          <p class="upper">The great getaway, your way</p>
+         <p class="heading">Save at least 15% with Getaway Deals</p>
+         <p class="tagline">Find deals on stays between 4 April–28 September 2023</p>
+        </div>
+     </div>
+    </div>
+
+    
+
+<!-- SEARCHBOX START -->
+
+<!-- Search bar  -->
+<section id="Gateway_search">
+
+  <div id="searchBar">
+    <div id="searchCity">
+        <i class="fa-solid fa-bed"></i>
+        <input id="query" type="text" placeholder="Where Are You Going?">
+    </div>
+    <div id="dates">
+       <p>Checkin</p><input id="skCheckin" type="date" name="trip-start" value="2023-09-5" min="2023-08-29" max="2024-03-31">
+       <p>Checkout</p><input id="skCheckout" type="date" name="trip-start" value="2023-09-10" min="2023-09-10" max="2024-03-31">
+    </div>
+    <div id="skPerson">
+        <i class="fa-solid fa-user"></i>
+        <p id="adult"></p><span>Adult</span>
+        <p id="child"></p><span>Child</span>
+        <p id="room"></p><span>Room</span> 
+    </div>
+    <div class="searchBtn">
+        <button id="searchBtn">Search</button>
+    </div>
+  </div>
+  <div class="searchPopUp" id="searchpopupdiv">
+    <!-- <p id="closesearch">Close</p> -->
+    <div class="sgnCityBak">
+        <div id="cityicon">
+            <i class="fa-solid fa-location-dot"></i>
+            <option id="SearchOptionBaku" value="baku">Baku</option>
+        </div>
+        <p>Azerbaijan</p>
+    </div>
+    <div class="sgnCityDivQab">
+        <div id="cityicon">
+            <i class="fa-solid fa-location-dot"></i>
+            <option id="SearchOptionQabala" value="qabala">Qabala</option>
+        </div>
+        <p>Azerbaijan</p>
+    </div>
+    <div class="sgnCityDivQuba">
+        <div id="cityicon">
+            <i class="fa-solid fa-location-dot"></i>
+            <option id="SearchOptionQuba" value="quba">Quba</option>
+        </div>
+        <p>Azerbaijan</p>
+    </div>
+    <div class="sgnCityDivShek">
+        <div id="cityicon">
+            <i class="fa-solid fa-location-dot"></i>
+            <option id="SearchOptionShek" value="sheki">Sheki</option>
+        </div>
+        <p>Azerbaijan</p>
+    </div>
+  </div>
+  <!-- increse decrese the values of number of persons -->
+  <div class="popup" id="skPersonDiv">
+    <p id="cross">Close</p>
+    <div id="AdultDiv">
+        <p>Adult</p>
+        <form action="" id="adultsForm">
+            <div class="value-button" id="decreaseAdult" value="Decrease Value"><span id="minus">-</span></div>
+            <input type="number" id="Adultnumber" value="1" />
+             <div class="value-button" id="increaseAdult" value="Increase Value"><span id="plus">+</span></div>
+        </form>
+    </div>
+    <div id="childDiv">
+       <p>Child</p>
+       <form action="" id="childForm">
+        <div class="value-button" id="decreaseChild" value="Decrease Value"><span id="minus">-</span></div>
+        <input type="number" id="Childnumber" value="0" />
+        <div class="value-button" id="increaseChild" value="Increase Value"><span id="plus">+</span></div>
+     </form>
+    </div>
+    <div id="roomDiv">
+      <p>Rooms</p>
+      <form action="" id="roomsForm">
+       <div class="value-button" id="decreaseRoom" value="Decrease Value"><span id="minus">-</span></div>
+       <input type="number" id="Roomnumber" value="0" />
+       <div class="value-button" id="increaseRoom" value="Increase Value"><span id="plus">+</span></div>
+    </form>
+   </div>
+   
+   </div>
+  </div>
+
+</section>
+
+<!-- SEARCHBOX END -->
+
+<section id="gateway">
+
+    <div class="course-area pt-150 pb-150">
+        <div class="container">     
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-course mb-70">
+                    <div class="course-img">
+                        <a href="/product.html"><img src="https://cf.bstatic.com/xdata/images/city/640x640/654659.webp?k=9c4ac59d35869485631346dc1ee16d28e82ec5f79654bf56b4b4eaeef3388299&o=" alt="course">
+                        </a>
+                    </div>
+                    <div class="course-content">
+                        
+                        <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 33</span></p>
+                        <a class="default-btn" href="/product.html">View deals</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-course mb-70">
+                    <div class="course-img">
+                        <a href="/product.html"><img src="https://cf.bstatic.com/xdata/images/city/640x640/691464.webp?k=9d065dc574012a9e15ef4f2fe25dc035d69f7061ad2c77d54eddb3dbbde8d6d3&o=" alt="course">
+                           
+                        </a>
+                    </div>
+                    <div class="course-content">
+                        
+                        <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 29</span></p>
+                        <a class="default-btn" href="/product.html">View deals</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-course mb-70">
+                    <div class="course-img">
+                        <a href="/product.html"><img src="https://cf.bstatic.com/xdata/images/city/640x640/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&o=" alt="course">
+                           
+                        </a>
+                    </div>
+                    <div class="course-content">
+                        
+                        <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 12</span></p>
+                        <a class="default-btn" href="/product.html">View deals</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-course mb-70">
+                    <div class="course-img">
+                        <a href="/product.html"><img src="https://cf.bstatic.com/xdata/images/city/640x640/691621.webp?k=c42cfe573c89d884b935ea9b3936e0aa985622df29d7608c9b4a8cd2ec403c5c&o=" alt="course">
+                           
+                        </a>
+                    </div>
+                    <div class="course-content">
+                        
+                        <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 28</span></p>
+                        <a class="default-btn" href="/product.html">View deals</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-course mb-70">
+                    <div class="course-img">
+                        <a href="/product.html"><img src="https://cf.bstatic.com/xdata/images/city/640x640/654502.webp?k=59e22b717abdc899512441630bb0b844d39240c521d882e8debf1418636ee3fd&o=" alt="course">
+                            
+                        </a>
+                    </div>
+                    <div class="course-content">
+                        
+                        <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 59</span></p>
+                        <a class="default-btn" href="/product.html">View deals</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-course mb-70">
+                    <div class="course-img">
+                        <a href="/product.html"><img src="https://cf.bstatic.com/xdata/images/city/640x640/691068.webp?k=612f346134e1f9d25d74c1e0842cd90084f3f6cde308a996172b8be2bf7bb712&o=" alt="course">
+                            
+                        </a>
+                    </div>
+                    <div class="course-content">
+                        
+                        <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 6</span></p>
+                        <a class="default-btn" href="/product.html">View deals</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-course">
+                    <div class="course-img">
+                        <a href="/product.html"><img src="https://cf.bstatic.com/xdata/images/city/640x640/654763.webp?k=1e195d514be6a824d1427778ad3089dd31e6b986f6e8499c4192cf07715fd3b4&o=" alt="course">
+                            
+                        </a>
+                    </div>
+                    <div class="course-content">
+                        
+                        <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 118</span></p>
+                        <a class="default-btn" href="/product.html">View deals</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-course">
+                    <div class="course-img">
+                        <a href="/product.html"><img src="https://cf.bstatic.com/xdata/images/city/640x640/972774.webp?k=ce514cc7edcd6f20d5223676bdaa0ef3f95f6a3b5befcb4934107feaedf8132e&o=" alt="course">
+                            
+                        </a>
+                    </div>
+                    <div class="course-content">
+                        
+                        <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 55</span></p>
+                        <a class="default-btn" href="/product.html">View deals</a>
+                    </div>   
+                </div>
+            </div>
+            <div class="col-md-4 hidden-sm col-xs-12">
+                <div class="single-course">
+                    <div class="course-img">
+                        <a href="/product.html"><img src="https://cf.bstatic.com/xdata/images/city/640x640/654590.webp?k=c564e1c46a0b6cde3d14d69e01ca8d0152d0f4e68a815888a2f775e6e4a8c38e&o=" alt="course">
+                            
+                        </a>
+                    </div>
+                    <div class="course-content">
+                        
+                        <p><span class="green">Getaway Deal</span> start from <span class="green_price">AZN 73</span></p>
+                        <a class="default-btn" href="/product.html">View deals</a>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div> 
+  </div>       
+
+</section>
+
+<section id="about">
+    <div class="col-md-5 col-sm-6 col-xs-12">
+     <div class="all">
+       <div class="col-md-6 col-sm-6 col-xs-12">
+         <div class="left">
+           <h2>Getaway Deals – Frequently Asked Questions</h2>
+         </div>
+       </div>
+ 
+       <div class="col-md-6 col-sm-6 col-xs-12">
+         <div class="accordion accordion-flush" id="accordionFlushExample">
+           <div class="accordion-item">
+             <h2 class="accordion-header" id="flush-headingOne">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                How much can I save with Getaway Deals?
+               </button>
+             </h2>
+             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+               <div class="accordion-body"><p>Getaway Deals start at 15% off. Discounts are applied to the original price of a room, before taxes and charges. The discounted prices offered as Getaway Deals can’t be combined with other discounts, except for Genius discounts.</p></div>
+             </div>
+           </div>
+           <div class="accordion-item">
+             <h2 class="accordion-header" id="flush-headingTwo">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                When can I travel using Getaway Deals?
+               </button>
+             </h2>
+             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+               <div class="accordion-body"><p>Getaway Deals are available at participating properties worldwide, for stays between 4 April and 28 September 2023.</p></div>
+             </div>
+           </div>
+           <div class="accordion-item">
+             <h2 class="accordion-header" id="flush-headingThree">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                When can I book Getaway Deals?
+               </button>
+             </h2>
+             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+               <div class="accordion-body"><p>Getaway Deals can be booked between 15 March and 28 September 2023.</p></div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
+   </section>
+
+
+<!-- Lower Search Bar -->
+<div id="lower_seachbar_container">
+    <p id="subs_head">Save time, save money!<p>
+    <p id="subs_desc">Sign up and we'll send the best deals to you</p>
+    <div>
+        <input id="subs_mail" type="text" placeholder="  Your email address">
+        <button id="subs_btn">Subscribe</button>
+    </div>
+</div>
+
+ 
+<!-- List Your Property -->
+<div id="lyp">
+   <button id="lyp_btn">List your property</button>
+   <hr id="lyp_line">
+   <div id="lyp_msc">
+    <a href="">Mobile Version</a>
+    <a href="/login.html">Your account</a>
+    <a href="">Make changes to your booking online</a>
+    <a data-toggle="tooltip" data-placement="bottom" title="Your Reference ID is 'YAN6U71N' " href="">Customer Service Help</a>
+    <a data-toggle="tooltip" data-placement="bottom" title="Become An Affliate " href="">Bacome an affliate</a>
+    <a href="">Booking.com for Business</a>
+   </div>    
+</div>
+
+<!-- FOOTER START -->
+
+<footer>  
+
+  <div id="Footer_part1">
+    <div class="footer_list_container">
+     <ul>
+        <a href=""> <li>Countries</li></a>
+         <a href=""><li>Regions</li></a>
+         <a href=""><li>Cities</li></a>
+         <a href=""><li>Districts</li></a>
+         <a href=""><li>Airports</li></a>
+         <a href=""><li>Hotels</li></a>
+         <a href=""><li>Places of Interest</li></a>
+     </ul>
+    </div>
+    <div class="footer_list_container">
+     <ul>
+         <a href=""><li>Homes</li></a>
+         <a href=""><li>Apartments</li></a>
+         <a href=""><li>Resorts</li></a>
+         <a href=""><li>Villas</li></a>
+         <a href=""><li>Hostels</li></a>
+         <a href=""><li>B&B's</li></a>
+         <a href=""><li>Guest houses</li></a>
+     </ul>
+    </div>
+    <div class="footer_list_container">
+     <ul>
+         <a href=""><li>Unique places to stay</li></a>
+         <a href=""><li>All destinations</li></a>
+         <a href=""><li>All flight destinations</li></a>
+         <a href=""><li>All car hire locations</li></a>
+         <a href=""><li>Discover</li></a>
+         <a href=""><li>Reviews</li></a>
+         <a href=""><li>Discover monthly stays</li></a>
+         <a href=""><li>Unpacked: Travel articles</li></a>
+         <a href=""><li>Seaonal and holiday deals</li></a>
+         <a href=""><li>Traveller Review Awards</li></a>
+     </ul>
+    </div>
+    <div class="footer_list_container">
+     <ul>
+         <a href=""><li>Car hire</li></a>
+         <a href=""><li>Flight finder</li></a>
+         <a href=""><li>Restaurant reservations</li></a>
+         <a href=""><li>Booking.com for Travel Agents</li></a>
+     </ul>
+    </div>
+    <div class="footer_list_container">
+     <ul>
+        <a href=""><li>Coronavirus (COVID-19) FAQS</li></a>
+         <a href=""><li>About Booking.com</li></a>
+         <a href=""><li>Customer Service Help</li></a>
+         <a href=""><li>Partner Help</li></a>
+         <a href=""></a>
+         <a href=""><li>Sustainability</li></a>
+         <a href=""><li>Press Center</li></a>
+         <a href=""><li>Safety Resource Center</li></a>
+         <a href=""><li>Investor Relations</li></a>
+         <a href=""><li>Terms & Conditions</li></a>
+         <a href=""><li>Partner Dispute</li></a>
+         <a href=""><li>How we work</li></a>
+         <a href=""><li>Privacy & Cookie Statement</li></a>
+         <a href=""><li>MSA Statement </li></a>
+         <a href=""><li>Corporate Contact</li></a>
+         <a href=""><li>Content guidelines</li></a>
+     </ul>
+    </div>
+ </div>
+
+ <div id="Footer_part2"><a href="">Extranet Login</a></div>
+ <div id="Footer_part3"><p>Copyright © 1996-2023 Yanbukhtin™. All rights reserved.</p></div>
+ <div id="Footer_part4"><p>Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.</p></div>
+ 
+ <div id="Footer_part_5">
+     <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png" alt="">
+     <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png" alt="">
+     <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png" alt="">
+     <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png" alt="">
+     <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_rentalcars/6bc5ec89d870111592a378bbe7a2086f0b01abc4.png" alt="">
+     <img src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png" alt="">
+ </div>
+
+</footer>
+
+<!-- FOOTER END -->
+
+</div>
+
+  <script  type="module" src="/assets/js/main.js"></script>
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+    
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+</body>
+</html>
